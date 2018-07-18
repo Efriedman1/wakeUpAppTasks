@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07330BF920FFAF6C0076EEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330BF820FFAF6C0076EEBF /* AppDelegate.swift */; };
+		07330BFB20FFAF6C0076EEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330BFA20FFAF6C0076EEBF /* ViewController.swift */; };
+		07330BFE20FFAF6C0076EEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07330BFC20FFAF6C0076EEBF /* Main.storyboard */; };
+		07330C0020FFAF6F0076EEBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07330BFF20FFAF6F0076EEBF /* Assets.xcassets */; };
+		07330C0320FFAF6F0076EEBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07330C0120FFAF6F0076EEBF /* LaunchScreen.storyboard */; };
+		07330C0E20FFAF6F0076EEBF /* wakeUpAppGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C0D20FFAF6F0076EEBF /* wakeUpAppGamesTests.swift */; };
+		07330C1920FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C1820FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07330C0A20FFAF6F0076EEBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07330BED20FFAF6C0076EEBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07330BF420FFAF6C0076EEBF;
+			remoteInfo = wakeUpAppGames;
+		};
+		07330C1520FFAF6F0076EEBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07330BED20FFAF6C0076EEBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07330BF420FFAF6C0076EEBF;
+			remoteInfo = wakeUpAppGames;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07330BF520FFAF6C0076EEBF /* wakeUpAppGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeUpAppGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07330BF820FFAF6C0076EEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07330BFA20FFAF6C0076EEBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07330BFD20FFAF6C0076EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07330BFF20FFAF6F0076EEBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07330C0220FFAF6F0076EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07330C0420FFAF6F0076EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07330C0920FFAF6F0076EEBF /* wakeUpAppGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeUpAppGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07330C0D20FFAF6F0076EEBF /* wakeUpAppGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeUpAppGamesTests.swift; sourceTree = "<group>"; };
+		07330C0F20FFAF6F0076EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07330C1420FFAF6F0076EEBF /* wakeUpAppGamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeUpAppGamesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07330C1820FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeUpAppGamesUITests.swift; sourceTree = "<group>"; };
+		07330C1A20FFAF6F0076EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07330BF220FFAF6C0076EEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07330C0620FFAF6F0076EEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07330C1120FFAF6F0076EEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07330BEC20FFAF6C0076EEBF = {
+			isa = PBXGroup;
+			children = (
+				07330BF720FFAF6C0076EEBF /* wakeUpAppGames */,
+				07330C0C20FFAF6F0076EEBF /* wakeUpAppGamesTests */,
+				07330C1720FFAF6F0076EEBF /* wakeUpAppGamesUITests */,
+				07330BF620FFAF6C0076EEBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07330BF620FFAF6C0076EEBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07330BF520FFAF6C0076EEBF /* wakeUpAppGames.app */,
+				07330C0920FFAF6F0076EEBF /* wakeUpAppGamesTests.xctest */,
+				07330C1420FFAF6F0076EEBF /* wakeUpAppGamesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07330BF720FFAF6C0076EEBF /* wakeUpAppGames */ = {
+			isa = PBXGroup;
+			children = (
+				07330BF820FFAF6C0076EEBF /* AppDelegate.swift */,
+				07330BFA20FFAF6C0076EEBF /* ViewController.swift */,
+				07330BFC20FFAF6C0076EEBF /* Main.storyboard */,
+				07330BFF20FFAF6F0076EEBF /* Assets.xcassets */,
+				07330C0120FFAF6F0076EEBF /* LaunchScreen.storyboard */,
+				07330C0420FFAF6F0076EEBF /* Info.plist */,
+			);
+			path = wakeUpAppGames;
+			sourceTree = "<group>";
+		};
+		07330C0C20FFAF6F0076EEBF /* wakeUpAppGamesTests */ = {
+			isa = PBXGroup;
+			children = (
+				07330C0D20FFAF6F0076EEBF /* wakeUpAppGamesTests.swift */,
+				07330C0F20FFAF6F0076EEBF /* Info.plist */,
+			);
+			path = wakeUpAppGamesTests;
+			sourceTree = "<group>";
+		};
+		07330C1720FFAF6F0076EEBF /* wakeUpAppGamesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07330C1820FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift */,
+				07330C1A20FFAF6F0076EEBF /* Info.plist */,
+			);
+			path = wakeUpAppGamesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07330BF420FFAF6C0076EEBF /* wakeUpAppGames */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07330C1D20FFAF6F0076EEBF /* Build configuration list for PBXNativeTarget "wakeUpAppGames" */;
+			buildPhases = (
+				07330BF120FFAF6C0076EEBF /* Sources */,
+				07330BF220FFAF6C0076EEBF /* Frameworks */,
+				07330BF320FFAF6C0076EEBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wakeUpAppGames;
+			productName = wakeUpAppGames;
+			productReference = 07330BF520FFAF6C0076EEBF /* wakeUpAppGames.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07330C0820FFAF6F0076EEBF /* wakeUpAppGamesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07330C2020FFAF6F0076EEBF /* Build configuration list for PBXNativeTarget "wakeUpAppGamesTests" */;
+			buildPhases = (
+				07330C0520FFAF6F0076EEBF /* Sources */,
+				07330C0620FFAF6F0076EEBF /* Frameworks */,
+				07330C0720FFAF6F0076EEBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07330C0B20FFAF6F0076EEBF /* PBXTargetDependency */,
+			);
+			name = wakeUpAppGamesTests;
+			productName = wakeUpAppGamesTests;
+			productReference = 07330C0920FFAF6F0076EEBF /* wakeUpAppGamesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07330C1320FFAF6F0076EEBF /* wakeUpAppGamesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07330C2320FFAF6F0076EEBF /* Build configuration list for PBXNativeTarget "wakeUpAppGamesUITests" */;
+			buildPhases = (
+				07330C1020FFAF6F0076EEBF /* Sources */,
+				07330C1120FFAF6F0076EEBF /* Frameworks */,
+				07330C1220FFAF6F0076EEBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07330C1620FFAF6F0076EEBF /* PBXTargetDependency */,
+			);
+			name = wakeUpAppGamesUITests;
+			productName = wakeUpAppGamesUITests;
+			productReference = 07330C1420FFAF6F0076EEBF /* wakeUpAppGamesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07330BED20FFAF6C0076EEBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Make School";
+				TargetAttributes = {
+					07330BF420FFAF6C0076EEBF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					07330C0820FFAF6F0076EEBF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 07330BF420FFAF6C0076EEBF;
+					};
+					07330C1320FFAF6F0076EEBF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 07330BF420FFAF6C0076EEBF;
+					};
+				};
+			};
+			buildConfigurationList = 07330BF020FFAF6C0076EEBF /* Build configuration list for PBXProject "wakeUpAppGames" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07330BEC20FFAF6C0076EEBF;
+			productRefGroup = 07330BF620FFAF6C0076EEBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07330BF420FFAF6C0076EEBF /* wakeUpAppGames */,
+				07330C0820FFAF6F0076EEBF /* wakeUpAppGamesTests */,
+				07330C1320FFAF6F0076EEBF /* wakeUpAppGamesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07330BF320FFAF6C0076EEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07330C0320FFAF6F0076EEBF /* LaunchScreen.storyboard in Resources */,
+				07330C0020FFAF6F0076EEBF /* Assets.xcassets in Resources */,
+				07330BFE20FFAF6C0076EEBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07330C0720FFAF6F0076EEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07330C1220FFAF6F0076EEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07330BF120FFAF6C0076EEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07330BFB20FFAF6C0076EEBF /* ViewController.swift in Sources */,
+				07330BF920FFAF6C0076EEBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07330C0520FFAF6F0076EEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07330C0E20FFAF6F0076EEBF /* wakeUpAppGamesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07330C1020FFAF6F0076EEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07330C1920FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07330C0B20FFAF6F0076EEBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07330BF420FFAF6C0076EEBF /* wakeUpAppGames */;
+			targetProxy = 07330C0A20FFAF6F0076EEBF /* PBXContainerItemProxy */;
+		};
+		07330C1620FFAF6F0076EEBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07330BF420FFAF6C0076EEBF /* wakeUpAppGames */;
+			targetProxy = 07330C1520FFAF6F0076EEBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07330BFC20FFAF6C0076EEBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07330BFD20FFAF6C0076EEBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07330C0120FFAF6F0076EEBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07330C0220FFAF6F0076EEBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07330C1B20FFAF6F0076EEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07330C1C20FFAF6F0076EEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07330C1E20FFAF6F0076EEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PT53JXM7XM;
+				INFOPLIST_FILE = wakeUpAppGames/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.wakeUpAppGames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07330C1F20FFAF6F0076EEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PT53JXM7XM;
+				INFOPLIST_FILE = wakeUpAppGames/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.wakeUpAppGames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07330C2120FFAF6F0076EEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PT53JXM7XM;
+				INFOPLIST_FILE = wakeUpAppGamesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.wakeUpAppGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wakeUpAppGames.app/wakeUpAppGames";
+			};
+			name = Debug;
+		};
+		07330C2220FFAF6F0076EEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PT53JXM7XM;
+				INFOPLIST_FILE = wakeUpAppGamesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.wakeUpAppGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wakeUpAppGames.app/wakeUpAppGames";
+			};
+			name = Release;
+		};
+		07330C2420FFAF6F0076EEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PT53JXM7XM;
+				INFOPLIST_FILE = wakeUpAppGamesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.wakeUpAppGamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wakeUpAppGames;
+			};
+			name = Debug;
+		};
+		07330C2520FFAF6F0076EEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PT53JXM7XM;
+				INFOPLIST_FILE = wakeUpAppGamesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.wakeUpAppGamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wakeUpAppGames;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07330BF020FFAF6C0076EEBF /* Build configuration list for PBXProject "wakeUpAppGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07330C1B20FFAF6F0076EEBF /* Debug */,
+				07330C1C20FFAF6F0076EEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07330C1D20FFAF6F0076EEBF /* Build configuration list for PBXNativeTarget "wakeUpAppGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07330C1E20FFAF6F0076EEBF /* Debug */,
+				07330C1F20FFAF6F0076EEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07330C2020FFAF6F0076EEBF /* Build configuration list for PBXNativeTarget "wakeUpAppGamesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07330C2120FFAF6F0076EEBF /* Debug */,
+				07330C2220FFAF6F0076EEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07330C2320FFAF6F0076EEBF /* Build configuration list for PBXNativeTarget "wakeUpAppGamesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07330C2420FFAF6F0076EEBF /* Debug */,
+				07330C2520FFAF6F0076EEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07330BED20FFAF6C0076EEBF /* Project object */;
+}
