@@ -10,6 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var goodMorningLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
+    @IBOutlet weak var quizGameButton: UIButton!
+    @IBOutlet weak var mathGameButton: UIButton!
+    @IBOutlet weak var puzzleGameButton: UIButton!
+    
+    
+    @IBAction func quizGameButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func mathGameButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func puzzleGameButton(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
