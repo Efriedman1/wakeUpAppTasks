@@ -10,6 +10,8 @@ import UIKit
 
 class QuizGameViewController: UIViewController {
     
+    @IBOutlet weak var quizGameLabel: UILabel!
+    @IBOutlet weak var doneButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -19,6 +21,9 @@ class QuizGameViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func doneButton(_ sender: UIButton) {
     }
     
     

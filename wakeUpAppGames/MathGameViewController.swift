@@ -10,6 +10,8 @@ import UIKit
 
 class MathGameViewController: UIViewController {
     
+    @IBOutlet weak var mathGameLabel: UILabel!
+    @IBOutlet weak var doneButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -20,6 +22,10 @@ class MathGameViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func doneButton(_ sender: UIButton) {
+    }
+    
     
     
 }

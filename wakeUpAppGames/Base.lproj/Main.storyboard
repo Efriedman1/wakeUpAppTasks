@@ -125,6 +125,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="doneButton:" destination="okU-x3-ubT" eventType="touchUpInside" id="kfS-qk-3zn"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ABl-Ue-wWt"/>
                                 </connections>
                             </button>
@@ -141,6 +142,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LJl-21-lqy"/>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="KYc-0t-cZr" id="lOq-Po-KLT"/>
+                        <outlet property="quizGameLabel" destination="ZiA-nZ-m3n" id="RkI-dk-xuh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNf-u5-cZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,6 +171,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="doneButton:" destination="3Zf-GW-q0S" eventType="touchUpInside" id="tKr-gH-0c1"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="XbX-s2-zV6"/>
                                 </connections>
                             </button>
@@ -188,6 +194,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ixY-eK-G2M"/>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="3Vf-y0-1sQ" id="zEz-L0-lAP"/>
+                        <outlet property="mathGameLabel" destination="LDX-SB-Htd" id="baL-I3-xYC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLB-n6-mnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,6 +222,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="doneButton:" destination="7t9-fn-dnZ" eventType="touchUpInside" id="QNO-QX-x1b"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Obq-fq-2f5"/>
                                 </connections>
                             </button>
@@ -234,6 +245,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z5d-gG-bPt"/>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="rI0-uB-lZx" id="jG0-wd-b83"/>
+                        <outlet property="puzzleGameLabel" destination="AbL-x9-66Z" id="u14-oZ-SLh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHv-qi-wsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -241,6 +256,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Obq-fq-2f5"/>
+        <segue reference="ABl-Ue-wWt"/>
     </inferredMetricsTieBreakers>
 </document>
