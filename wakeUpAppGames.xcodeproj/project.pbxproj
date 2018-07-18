@@ -14,6 +14,9 @@
 		07330C0320FFAF6F0076EEBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07330C0120FFAF6F0076EEBF /* LaunchScreen.storyboard */; };
 		07330C0E20FFAF6F0076EEBF /* wakeUpAppGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C0D20FFAF6F0076EEBF /* wakeUpAppGamesTests.swift */; };
 		07330C1920FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C1820FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift */; };
+		07330C2720FFBB290076EEBF /* QuizGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2620FFBB290076EEBF /* QuizGameViewController.swift */; };
+		07330C2920FFBB3C0076EEBF /* MathGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */; };
+		07330C2B20FFBB520076EEBF /* PuzzleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		07330C1420FFAF6F0076EEBF /* wakeUpAppGamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeUpAppGamesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07330C1820FFAF6F0076EEBF /* wakeUpAppGamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeUpAppGamesUITests.swift; sourceTree = "<group>"; };
 		07330C1A20FFAF6F0076EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07330C2620FFBB290076EEBF /* QuizGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGameViewController.swift; sourceTree = "<group>"; };
+		07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameViewController.swift; sourceTree = "<group>"; };
+		07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				07330BF820FFAF6C0076EEBF /* AppDelegate.swift */,
 				07330BFA20FFAF6C0076EEBF /* ViewController.swift */,
+				07330C2620FFBB290076EEBF /* QuizGameViewController.swift */,
+				07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */,
+				07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */,
 				07330BFC20FFAF6C0076EEBF /* Main.storyboard */,
 				07330BFF20FFAF6F0076EEBF /* Assets.xcassets */,
 				07330C0120FFAF6F0076EEBF /* LaunchScreen.storyboard */,
@@ -257,7 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07330BFB20FFAF6C0076EEBF /* ViewController.swift in Sources */,
+				07330C2B20FFBB520076EEBF /* PuzzleGameViewController.swift in Sources */,
 				07330BF920FFAF6C0076EEBF /* AppDelegate.swift in Sources */,
+				07330C2920FFBB3C0076EEBF /* MathGameViewController.swift in Sources */,
+				07330C2720FFBB290076EEBF /* QuizGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
