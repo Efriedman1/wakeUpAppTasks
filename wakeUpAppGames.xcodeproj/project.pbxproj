@@ -17,6 +17,8 @@
 		07330C2720FFBB290076EEBF /* QuizGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2620FFBB290076EEBF /* QuizGameViewController.swift */; };
 		07330C2920FFBB3C0076EEBF /* MathGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */; };
 		07330C2B20FFBB520076EEBF /* PuzzleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */; };
+		78B0373220FFD2C50079C19C /* Trivia Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B0373020FFD2C50079C19C /* Trivia Questions.swift */; };
+		78B0373320FFD2C50079C19C /* Question Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B0373120FFD2C50079C19C /* Question Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		07330C2620FFBB290076EEBF /* QuizGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGameViewController.swift; sourceTree = "<group>"; };
 		07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameViewController.swift; sourceTree = "<group>"; };
 		07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGameViewController.swift; sourceTree = "<group>"; };
+		78B0373020FFD2C50079C19C /* Trivia Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Trivia Questions.swift"; path = "wakeUpAppGames/Trivia Questions.swift"; sourceTree = SOURCE_ROOT; };
+		78B0373120FFD2C50079C19C /* Question Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Question Model.swift"; path = "wakeUpAppGames/Question Model.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		07330BF720FFAF6C0076EEBF /* wakeUpAppGames */ = {
 			isa = PBXGroup;
 			children = (
+				78B0372F20FFD2B60079C19C /* Supporting Files */,
 				07330BF820FFAF6C0076EEBF /* AppDelegate.swift */,
 				07330BFA20FFAF6C0076EEBF /* ViewController.swift */,
 				07330C2620FFBB290076EEBF /* QuizGameViewController.swift */,
@@ -132,6 +137,15 @@
 				07330C1A20FFAF6F0076EEBF /* Info.plist */,
 			);
 			path = wakeUpAppGamesUITests;
+			sourceTree = "<group>";
+		};
+		78B0372F20FFD2B60079C19C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78B0373120FFD2C50079C19C /* Question Model.swift */,
+				78B0373020FFD2C50079C19C /* Trivia Questions.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07330BFB20FFAF6C0076EEBF /* ViewController.swift in Sources */,
+				78B0373220FFD2C50079C19C /* Trivia Questions.swift in Sources */,
 				07330C2B20FFBB520076EEBF /* PuzzleGameViewController.swift in Sources */,
+				78B0373320FFD2C50079C19C /* Question Model.swift in Sources */,
 				07330BF920FFAF6C0076EEBF /* AppDelegate.swift in Sources */,
 				07330C2920FFBB3C0076EEBF /* MathGameViewController.swift in Sources */,
 				07330C2720FFBB290076EEBF /* QuizGameViewController.swift in Sources */,
