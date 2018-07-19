@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import SpriteKit
 
 struct Question {
     var Question: String!
@@ -15,6 +17,8 @@ struct Question {
 }
 
 class QuizGameViewController: UIViewController {
+    
+    let viewController = ViewController()
     
     @IBOutlet weak var quizGameLabel: UILabel!
     @IBOutlet weak var doneButton: UIButton!
@@ -28,7 +32,11 @@ class QuizGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Questions = [Question(Question: "qwetrdsfg", Answers: ["qwer","asdf","zxcv"], Answer: 2)]
+        Questions = [Question(Question: "Who was the only US President to serve more than two consecutive terms?", Answers: ["Franklin D. Roosevelt","George Washington","Grover  Cleveland"], Answer: 0),
+                     Question(Question: "What is 50 Cent's real name?", Answers: ["Sean Combs","Shawn Carter","Curtis Jackson"], Answer: 2),
+                     Question(Question: "What is the chemical symbol for mercury?", Answers: ["Ag","Au","Gd"], Answer: 1),
+                     Question(Question: "Which country won the FIFA World Cup in 2018?", Answers: ["France","Croatia","England"], Answer: 0),
+                     Question(Question: "Of the following, which university was founded first?", Answers: ["University of Cambridge","University of Oxford","Harvard University"], Answer: 1)]
         pickQuestion()
     }
     
@@ -37,8 +45,7 @@ class QuizGameViewController: UIViewController {
     }
     
     func pickQuestion(){
-        if Questions.count > 0 {
-           QNumber = 0
+            QNumber = Int(arc4random_uniform(4))
             questionLabel.text = Questions[QNumber].Question
             
             answerNumber = Questions[QNumber].Answer
@@ -46,32 +53,33 @@ class QuizGameViewController: UIViewController {
             for i in 0 ..< Buttons.count{
                 Buttons[i].setTitle(Questions[QNumber].Answers[i], for: UIControlState.normal)
             }
-            Questions.remove(at: QNumber)
-        } else {
-            
-            NSLog("Done")
-        }
     }
     
     @IBAction func bttn1(_ sender: UIButton) {
         if answerNumber == 0 {
-            pickQuestion()
+            viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
+            viewController.quizGameButton.isEnabled = false
+            self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
             NSLog("Wrong")
         }
     }
     @IBAction func bttn2(_ sender: UIButton) {
         if answerNumber == 1 {
-            pickQuestion()
+           // viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
+           // viewController.quizGameButton.isEnabled = false
+            self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
             NSLog("Wrong")
         }
     }
     @IBAction func bttn3(_ sender: UIButton) {
         if answerNumber == 2 {
-            pickQuestion()
+           // viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
+          //  viewController.quizGameButton.isEnabled = false
+            self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
-            NSLog("Wrong")
+           NSLog("Wrong")
         }
     }
     
