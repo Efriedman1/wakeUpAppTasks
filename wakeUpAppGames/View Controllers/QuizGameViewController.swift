@@ -36,7 +36,7 @@ class QuizGameViewController: UIViewController {
                      Question(Question: "What is 50 Cent's real name?", Answers: ["Sean Combs","Shawn Carter","Curtis Jackson"], Answer: 2),
                      Question(Question: "What is the chemical symbol for mercury?", Answers: ["Ag","Au","Gd"], Answer: 1),
                      Question(Question: "Which country won the FIFA World Cup in 2018?", Answers: ["France","Croatia","England"], Answer: 0),
-                     Question(Question: "Of the following, which university was founded first?", Answers: ["University of Cambridge","University of Oxford","Harvard University"], Answer: 1)]
+                     Question(Question: "Of the following, which university was founded first?", Answers: ["University of Cambridge","University of Oxford","Harvard University"], Answer: 1)], Question(Question: "Including the Bill of Rights, how many amendments does the U.S. Constitution currently have?", Answers: ["13","27","50"], Answer: 1)]
         pickQuestion()
     }
     
@@ -45,7 +45,7 @@ class QuizGameViewController: UIViewController {
     }
     
     func pickQuestion(){
-            QNumber = Int(arc4random_uniform(4))
+            QNumber = Int(arc4random_uniform(Questions.count))
             questionLabel.text = Questions[QNumber].Question
             
             answerNumber = Questions[QNumber].Answer
