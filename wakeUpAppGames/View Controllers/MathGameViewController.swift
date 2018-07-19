@@ -8,11 +8,18 @@
 
 import UIKit
 
+struct Problem {
+    var Problem: String!
+    var Answers: [String]!
+    var Answer: Int!
+}
+
 class MathGameViewController: UIViewController {
     
     @IBOutlet weak var mathGameLabel: UILabel!
     @IBOutlet weak var doneButton: UIButton!
     
+    var mathProblems = [Problem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

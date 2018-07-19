@@ -103,14 +103,10 @@
 		07330BF720FFAF6C0076EEBF /* wakeUpAppGames */ = {
 			isa = PBXGroup;
 			children = (
+				07C8F26020FFC7C200A0C880 /* Storyboards */,
+				07C8F25F20FFC7B100A0C880 /* View Controllers */,
 				07330BF820FFAF6C0076EEBF /* AppDelegate.swift */,
-				07330BFA20FFAF6C0076EEBF /* ViewController.swift */,
-				07330C2620FFBB290076EEBF /* QuizGameViewController.swift */,
-				07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */,
-				07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */,
-				07330BFC20FFAF6C0076EEBF /* Main.storyboard */,
 				07330BFF20FFAF6F0076EEBF /* Assets.xcassets */,
-				07330C0120FFAF6F0076EEBF /* LaunchScreen.storyboard */,
 				07330C0420FFAF6F0076EEBF /* Info.plist */,
 			);
 			path = wakeUpAppGames;
@@ -132,6 +128,26 @@
 				07330C1A20FFAF6F0076EEBF /* Info.plist */,
 			);
 			path = wakeUpAppGamesUITests;
+			sourceTree = "<group>";
+		};
+		07C8F25F20FFC7B100A0C880 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07330BFA20FFAF6C0076EEBF /* ViewController.swift */,
+				07330C2620FFBB290076EEBF /* QuizGameViewController.swift */,
+				07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */,
+				07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		07C8F26020FFC7C200A0C880 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				07330C0120FFAF6F0076EEBF /* LaunchScreen.storyboard */,
+				07330BFC20FFAF6C0076EEBF /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

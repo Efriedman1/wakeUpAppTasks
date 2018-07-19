@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func quizGameButton(_ sender: UIButton) {
+        
     }
     
     @IBAction func mathGameButton(_ sender: UIButton) {
