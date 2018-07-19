@@ -21,9 +21,13 @@ class QuizGameViewController: UIViewController {
     let viewController = ViewController()
     
     @IBOutlet weak var quizGameLabel: UILabel!
-    @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var Buttons: [UIButton]!
+    
+    @IBOutlet weak var bttn1: UIButton!
+    @IBOutlet weak var bttn2: UIButton!
+    @IBOutlet weak var bttn3: UIButton!
+    
     
     var Questions = [Question]()
     var QNumber = Int()
@@ -31,6 +35,8 @@ class QuizGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         Questions = [Question(Question: "Who was the only US President to serve more than two consecutive terms?", Answers: ["Franklin D. Roosevelt","George Washington","Grover  Cleveland"], Answer: 0),
                      Question(Question: "What is 50 Cent's real name?", Answers: ["Sean Combs","Shawn Carter","Curtis Jackson"], Answer: 2),
@@ -57,33 +63,33 @@ class QuizGameViewController: UIViewController {
     
     @IBAction func bttn1(_ sender: UIButton) {
         if answerNumber == 0 {
-            viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
-            //viewController.quizGameButton.isEnabled = false
             self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
             NSLog("Wrong")
+            bttn1.backgroundColor = UIColor.red
         }
     }
     @IBAction func bttn2(_ sender: UIButton) {
         if answerNumber == 1 {
-           viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
-           // viewController.quizGameButton.isEnabled = false
             self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
             NSLog("Wrong")
+            bttn2.backgroundColor = UIColor.red
         }
     }
     @IBAction func bttn3(_ sender: UIButton) {
         if answerNumber == 2 {
-            viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
-          //  viewController.quizGameButton.isEnabled = false
             self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
            NSLog("Wrong")
+            bttn3.backgroundColor = UIColor.red
         }
     }
-    
-    @IBAction func doneButton(_ sender: UIButton) {
+    //prepare function not working, nil value found when unwrapping optional
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var destViewController: ViewController = segue.destination as! ViewController
+        destViewController.quizGameButton.setTitleColor(.green, for: .normal)
+        destViewController.quizGameButton.isEnabled = false
     }
     
     

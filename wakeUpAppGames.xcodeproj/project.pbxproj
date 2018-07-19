@@ -17,6 +17,7 @@
 		07330C2720FFBB290076EEBF /* QuizGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2620FFBB290076EEBF /* QuizGameViewController.swift */; };
 		07330C2920FFBB3C0076EEBF /* MathGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */; };
 		07330C2B20FFBB520076EEBF /* PuzzleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */; };
+		079A93332100F6BC004C840C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A93322100F6BC004C840C /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		07330C2620FFBB290076EEBF /* QuizGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGameViewController.swift; sourceTree = "<group>"; };
 		07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameViewController.swift; sourceTree = "<group>"; };
 		07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGameViewController.swift; sourceTree = "<group>"; };
+		079A93322100F6BC004C840C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				07330C2620FFBB290076EEBF /* QuizGameViewController.swift */,
 				07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */,
 				07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */,
+				079A93322100F6BC004C840C /* GameScene.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079A93332100F6BC004C840C /* GameScene.swift in Sources */,
 				07330BFB20FFAF6C0076EEBF /* ViewController.swift in Sources */,
 				07330C2B20FFBB520076EEBF /* PuzzleGameViewController.swift in Sources */,
 				07330BF920FFAF6C0076EEBF /* AppDelegate.swift in Sources */,
