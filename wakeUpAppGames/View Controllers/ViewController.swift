@@ -18,10 +18,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func quizGameButton(_ sender: UIButton) {
-        
+        quizGameButton.setTitleColor(.green, for: .normal)
     }
     
     @IBAction func mathGameButton(_ sender: UIButton) {
+        mathGameButton.setTitleColor(.green, for: .normal)
     }
     
     @IBAction func puzzleGameButton(_ sender: Any) {

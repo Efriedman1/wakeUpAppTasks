@@ -58,7 +58,7 @@ class QuizGameViewController: UIViewController {
     @IBAction func bttn1(_ sender: UIButton) {
         if answerNumber == 0 {
             viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
-            viewController.quizGameButton.isEnabled = false
+            //viewController.quizGameButton.isEnabled = false
             self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
             NSLog("Wrong")
@@ -66,7 +66,7 @@ class QuizGameViewController: UIViewController {
     }
     @IBAction func bttn2(_ sender: UIButton) {
         if answerNumber == 1 {
-           // viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
+           viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
            // viewController.quizGameButton.isEnabled = false
             self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
@@ -75,7 +75,7 @@ class QuizGameViewController: UIViewController {
     }
     @IBAction func bttn3(_ sender: UIButton) {
         if answerNumber == 2 {
-           // viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
+            viewController.quizGameButton.setTitleColor(UIColor.green, for: UIControlState.normal)
           //  viewController.quizGameButton.isEnabled = false
             self.performSegue(withIdentifier: "quizGame", sender: self)
         } else {
