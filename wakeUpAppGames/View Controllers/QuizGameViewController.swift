@@ -87,7 +87,7 @@ class QuizGameViewController: UIViewController {
     }
     //prepare function not working, nil value found when unwrapping optional
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var destViewController: ViewController = segue.destination as! ViewController
+        let destViewController: ViewController = segue.destination as! ViewController
         destViewController.quizGameButton.setTitleColor(.green, for: .normal)
         destViewController.quizGameButton.isEnabled = false
     }

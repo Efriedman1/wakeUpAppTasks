@@ -18,6 +18,7 @@
 		07330C2920FFBB3C0076EEBF /* MathGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */; };
 		07330C2B20FFBB520076EEBF /* PuzzleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */; };
 		079A93332100F6BC004C840C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A93322100F6BC004C840C /* GameScene.swift */; };
+		079A9335210118D6004C840C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 079A9334210118D6004C840C /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameViewController.swift; sourceTree = "<group>"; };
 		07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGameViewController.swift; sourceTree = "<group>"; };
 		079A93322100F6BC004C840C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		079A9334210118D6004C840C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				07330C2620FFBB290076EEBF /* QuizGameViewController.swift */,
 				07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */,
 				07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */,
+				079A9334210118D6004C840C /* GameScene.sks */,
 				079A93322100F6BC004C840C /* GameScene.swift */,
 			);
 			path = "View Controllers";
@@ -257,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079A9335210118D6004C840C /* GameScene.sks in Resources */,
 				07330C0320FFAF6F0076EEBF /* LaunchScreen.storyboard in Resources */,
 				07330C0020FFAF6F0076EEBF /* Assets.xcassets in Resources */,
 				07330BFE20FFAF6C0076EEBF /* Main.storyboard in Resources */,
