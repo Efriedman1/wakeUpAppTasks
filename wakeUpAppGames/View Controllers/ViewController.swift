@@ -18,30 +18,55 @@ class ViewController: UIViewController {
     
     
     @IBAction func quizGameButton(_ sender: UIButton) {
-    
+        quizGameButton.setTitleColor(.green, for: .disabled)
+        quizGameButton.isEnabled = false
     }
     
     @IBAction func mathGameButton(_ sender: UIButton) {
-        
+        mathGameButton.setTitleColor(.green, for: .disabled)
+        mathGameButton.isEnabled = false
     }
     
     @IBAction func puzzleGameButton(_ sender: Any) {
-       
+        puzzleGameButton.setTitleColor(.green, for: .disabled)
+        puzzleGameButton.isEnabled = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if quizGameButton.isTouchInside == true {
-            quizGameButton.setTitleColor(.green, for: .normal)
+            quizGameButton.setTitleColor(.green, for: .disabled)
             quizGameButton.isEnabled = false
         }
+        
+        if mathGameButton.isTouchInside == true {
+            mathGameButton.setTitleColor(.green, for: .disabled)
+            mathGameButton.isEnabled = false
+        }
+        
+        if puzzleGameButton.isTouchInside == true {
+            puzzleGameButton.setTitleColor(.green, for: .disabled)
+            puzzleGameButton.isEnabled = false
+        }
     }
-    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        for touch: AnyObject in touches {
+//
+//            if quizGameButton.contains(touch.location as! UIFocusEnvironment) {
+//                quizGameButton.setTitleColor(.green, for: .disabled)
+//                quizGameButton.isEnabled = false
+//
+//            }
+//        }
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    // MARK: - Navigation
+    @IBAction func unwindToHome(segue:UIStoryboardSegue) {
+        
+    }
 }
 
