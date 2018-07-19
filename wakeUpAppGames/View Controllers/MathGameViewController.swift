@@ -17,7 +17,6 @@ struct Problem {
 class MathGameViewController: UIViewController {
     
     @IBOutlet weak var mathGameLabel: UILabel!
-    @IBOutlet weak var doneButton: UIButton!
     
     var mathProblems = [Problem]()
     
@@ -30,8 +29,6 @@ class MathGameViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func doneButton(_ sender: UIButton) {
-    }
     
     
     
