@@ -33,7 +33,18 @@ class MathGameViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    Questions = [Question(Question: "Solve for x: 3x - 11 = 13", Answers: ["4", "8", "10"], Answer: 1), Question(Question: "What is the square root of 169?", Answers: ["11", "12", "13"], Answer: 2), Question(Question: "Which of the following fractions reduces to 1/2", Answers: ["4/10", "20/60", "250/500"], Answer: 2), Question(Question: "Which of the following numbers is both a perfect square and a perfect cube?", Answers: ["25", "64", "125"], Answer: 1)]
+    Questions = [Question(Question: "Solve for x: 3x - 11 = 13", Answers: ["4", "8", "10"], Answer: 1),
+            Question(Question: "What is the square root of 169?", Answers: ["11", "12", "13"], Answer: 2),
+            Question(Question: "Which of the following fractions reduces to 1/2", Answers: ["4/10", "20/60", "250/500"], Answer: 2),
+            Question(Question: "Which of the following numbers is both a perfect square and a perfect cube?", Answers: ["25", "64", "125"], Answer: 1),
+            Question(Question: "What is 25 * 4?", Answers: ["29","50","100"], Answer: 2),
+            Question(Question: "What is the cube root of 8?", Answers: ["1","2","4"], Answer: 1),
+            Question(Question: "What is 6 - 2?", Answers: ["2","3","4"], Answer: 2),
+            Question(Question: "What is (23 + 4)/3?", Answers: ["7","9","11"], Answer: 1),
+            Question(Question: "What is (2 + 2) - 1?", Answers: ["3","4","1"], Answer: 0),
+            Question(Question: "What is (17 + 3) * 5?", Answers: ["32","25","100"], Answer: 2),
+            Question(Question: "Solve for y: 13y + 3 = 68", Answers: ["4","5","6"], Answer: 1),
+            Question(Question: "What is 7 * 9?", Answers: ["16","63","36"], Answer: 1)]
     pickQuestion()
     
     
