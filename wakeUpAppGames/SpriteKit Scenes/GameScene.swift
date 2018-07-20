@@ -50,6 +50,9 @@ class GameScene: SKScene {
     var rightSide: Bool = false
     var leftSide: Bool = false
     
+  
+    
+    
     override func didMove(to view: SKView) {
         setupPhysics()
         layoutScene()
@@ -60,6 +63,7 @@ class GameScene: SKScene {
             doneLabel.fontName = ("AvenirNext-Bold")
             doneLabel.position = CGPoint(x: frame.midX, y: frame.midY + 200)
             doneLabel.fontSize = 60.0
+            doneLabel.fontColor = UIColor.darkGray
             doneLabel.run(SKAction.fadeIn(withDuration: 0.5))
             addChild(doneLabel)
             doneLabel.run(SKAction.fadeOut(withDuration: 0.5))
@@ -72,7 +76,7 @@ class GameScene: SKScene {
     }
     
     func layoutScene() {
-        backgroundColor = UIColor(red: 61/255, green: 66/255, blue: 71/255, alpha: 1.0)
+        backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1.0)
         
         playButton = SKSpriteNode(imageNamed: "playButton")
         playButton.size = CGSize(width: 100, height: 100)
@@ -89,8 +93,8 @@ class GameScene: SKScene {
         addChild(colorSwitch)
         
         scoreLabel.fontName = "AvenirNext-Bold"
-        scoreLabel.fontSize = 60.0
-        scoreLabel.fontColor = UIColor.white
+        scoreLabel.fontSize = 80.0
+        scoreLabel.fontColor = UIColor.darkGray
         scoreLabel.position = CGPoint(x: frame.midX, y: frame.midY)
         scoreLabel.zPosition = ZPositions.label
         addChild(scoreLabel)
@@ -130,6 +134,9 @@ class GameScene: SKScene {
     
     func gameOver(){
         UserDefaults.standard.set(score, forKey: "Recent Score")
+        if score > UserDefaults.standard.integer(forKey: "Highscore") {
+            UserDefaults.standard.set(score, forKey: "Highscore")
+        }
         if score >= 10 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "Main")
@@ -140,6 +147,7 @@ class GameScene: SKScene {
                     self.view?.window?.rootViewController = vc
             }, completion: { completed in
                 })
+    
         } else {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "Switch")
@@ -151,12 +159,13 @@ class GameScene: SKScene {
                     self.view?.window?.rootViewController = vc
             }, completion: { completed in
             })
-            
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-            label.center = CGPoint(x: 160, y: 284)
+            let puzzleGame = PuzzleGameViewController()
+            puzzleGame.highScoreLabel.removeFromSuperview()
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: 60.0))
+            label.center = CGPoint(x: 187.5, y: 300)
             label.textAlignment = .center
             label.text = "Try Again!"
-            label.font = UIFont.preferredFont(forTextStyle: .headline)
+            label.font = UIFont.preferredFont(forTextStyle: .headline).withSize(50.0)
                 vc.view.addSubview(label)
             
         }

@@ -36,6 +36,10 @@ class MathGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bttn1.layer.cornerRadius = 5
+        bttn2.layer.cornerRadius = 5
+        bttn3.layer.cornerRadius = 5
     
         mathProblems = [Problem(Problem: "Solve for x: 3x - 11 = 13", Answers: ["4", "8", "10"], Answer: 1),
                      Problem(Problem: "What is the square root of 169?", Answers: ["11", "12", "13"], Answer: 2),
@@ -97,8 +101,11 @@ class MathGameViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+            
+        }
     }
     
     
     
-}
+

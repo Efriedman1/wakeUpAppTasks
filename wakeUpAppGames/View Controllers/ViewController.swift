@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var goodMorningLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var quizGameButton: UIButton!
     @IBOutlet weak var mathGameButton: UIButton!
     @IBOutlet weak var puzzleGameButton: UIButton!
     
+    @IBOutlet weak var nextSceneButton: UIButton!
     
     @IBAction func quizGameButton(_ sender: UIButton) {
         quizGameButton.setTitleColor(.green, for: .disabled)
@@ -32,22 +34,27 @@ class ViewController: UIViewController {
         puzzleGameButton.isEnabled = false
     }
     
+    @IBAction func nextSceneTapped(_ sender: UIButton) {
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if quizGameButton.isTouchInside == true {
-            quizGameButton.setTitleColor(.green, for: .disabled)
-            quizGameButton.isEnabled = false
-        }
-        
-        if mathGameButton.isTouchInside == true {
-            mathGameButton.setTitleColor(.green, for: .disabled)
-            mathGameButton.isEnabled = false
-        }
-        
-        if puzzleGameButton.isTouchInside == true {
-            puzzleGameButton.setTitleColor(.green, for: .disabled)
-            puzzleGameButton.isEnabled = false
-        }
+        nextSceneButton.isEnabled = false
+//        if quizGameButton.isTouchInside == true {
+//            quizGameButton.setTitleColor(.green, for: .disabled)
+//            quizGameButton.isEnabled = false
+//        }
+//        
+//        if mathGameButton.isTouchInside == true {
+//            mathGameButton.setTitleColor(.green, for: .disabled)
+//            mathGameButton.isEnabled = false
+//        }
+//        
+//        if puzzleGameButton.isTouchInside == true {
+//            puzzleGameButton.setTitleColor(.green, for: .disabled)
+//            puzzleGameButton.isEnabled = false
+//        }
     }
 //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        for touch: AnyObject in touches {

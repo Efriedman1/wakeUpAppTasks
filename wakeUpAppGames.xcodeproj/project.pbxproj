@@ -84,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071C75DE21019FE8005047A6 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				07330BF820FFAF6C0076EEBF /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		071C75DF21019FF5005047A6 /* SpriteKit Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				079A93322100F6BC004C840C /* GameScene.swift */,
+				079A9334210118D6004C840C /* GameScene.sks */,
+			);
+			path = "SpriteKit Scenes";
+			sourceTree = "<group>";
+		};
 		07330BEC20FFAF6C0076EEBF = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +124,10 @@
 		07330BF720FFAF6C0076EEBF /* wakeUpAppGames */ = {
 			isa = PBXGroup;
 			children = (
+				071C75DF21019FF5005047A6 /* SpriteKit Scenes */,
+				071C75DE21019FE8005047A6 /* Delegates */,
 				07C8F26020FFC7C200A0C880 /* Storyboards */,
 				07C8F25F20FFC7B100A0C880 /* View Controllers */,
-				07330BF820FFAF6C0076EEBF /* AppDelegate.swift */,
 				07330BFF20FFAF6F0076EEBF /* Assets.xcassets */,
 				07330C0420FFAF6F0076EEBF /* Info.plist */,
 			);
@@ -141,8 +159,6 @@
 				07330C2620FFBB290076EEBF /* QuizGameViewController.swift */,
 				07330C2820FFBB3C0076EEBF /* MathGameViewController.swift */,
 				07330C2A20FFBB520076EEBF /* PuzzleGameViewController.swift */,
-				079A9334210118D6004C840C /* GameScene.sks */,
-				079A93322100F6BC004C840C /* GameScene.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

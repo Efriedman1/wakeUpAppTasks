@@ -36,7 +36,9 @@ class QuizGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        bttn1.layer.cornerRadius = 5
+        bttn2.layer.cornerRadius = 5
+        bttn3.layer.cornerRadius = 5
         
         questions = [Question(Question: "Who was the only US President to serve more than two consecutive terms?", Answers: ["Franklin D. Roosevelt","George Washington","Grover  Cleveland"], Answer: 0),
              Question(Question: "What is 50 Cent's real name?", Answers: ["Sean Combs","Shawn Carter","Curtis Jackson"], Answer: 2),
