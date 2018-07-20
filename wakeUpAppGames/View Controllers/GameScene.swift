@@ -39,7 +39,6 @@ enum ZPositions {
 }
 class GameScene: SKScene {
     var colorSwitch: SKSpriteNode!
-    var pauseButton: SKSpriteNode! = nil
     var playButton: SKSpriteNode!
     var ball: SKSpriteNode!
     var switchState = SwitchState.red
@@ -56,11 +55,19 @@ class GameScene: SKScene {
         layoutScene()
     }
     override func update(_ currentTime: TimeInterval) {
-      
+        if score == 10 {
+            let doneLabel = SKLabelNode(text: "Alarm Disabled!")
+            doneLabel.fontName = ("AvenirNext-Bold")
+            doneLabel.position = CGPoint(x: frame.midX, y: frame.midY + 200)
+            doneLabel.fontSize = 60.0
+            doneLabel.run(SKAction.fadeIn(withDuration: 0.5))
+            addChild(doneLabel)
+            doneLabel.run(SKAction.fadeOut(withDuration: 0.5))
+        }
     }
     
     func setupPhysics(){
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -3.0)
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -4.0)
         physicsWorld.contactDelegate = self
     }
     
@@ -71,10 +78,6 @@ class GameScene: SKScene {
         playButton.size = CGSize(width: 100, height: 100)
         playButton.position = CGPoint(x: frame.midX, y: frame.midY)
         
-        pauseButton = SKSpriteNode(imageNamed: "pauseButton")
-        pauseButton.size = CGSize(width: 30, height: 40)
-        pauseButton.position = CGPoint(x:frame.maxX - 40.0, y: frame.maxY - 40.0)
-        addChild(pauseButton)
         
         colorSwitch = SKSpriteNode(imageNamed: "ColorCircle")
         colorSwitch.size = CGSize(width: frame.size.width/3, height: frame.size.width/3)
@@ -103,7 +106,7 @@ class GameScene: SKScene {
     func spawnBall(){
         currentColorIndex = Int(arc4random_uniform(UInt32(4)))
         
-        ball = SKSpriteNode(texture: SKTexture(imageNamed: "ball"), color: PlayColors.colors[currentColorIndex!], size: CGSize(width: 20.0, height: 20.0))
+        ball = SKSpriteNode(texture: SKTexture(imageNamed: "ball"), color: PlayColors.colors[currentColorIndex!], size: CGSize(width: 40.0, height: 40.0))
         ball.colorBlendFactor = 1.0
         ball.name = "Ball"
         ball.position = CGPoint(x: frame.midX, y: frame.maxY)
@@ -124,76 +127,43 @@ class GameScene: SKScene {
             switchState = .red
         }
     }
-    func turnWheelLeft() {
-        colorSwitch.run(SKAction.rotate(byAngle: -.pi/2, duration: 0.25))
-        if switchState.rawValue == 0 {
-            let newState = SwitchState(rawValue: switchState.rawValue + 3)
-            switchState = newState!
-        } else {
-            let newState = SwitchState(rawValue: switchState.rawValue - 1)
-            switchState = newState!
-        }
-    }
     
     func gameOver(){
         UserDefaults.standard.set(score, forKey: "Recent Score")
-        if score > UserDefaults.standard.integer(forKey: "Highscore") {
-            UserDefaults.standard.set(score, forKey: "Highscore")
-        }
-    }
-    
-    //Explosion when ball hits wrong color
-    func explosion(ball:SKSpriteNode){
-        //Red
-        let explosion = SKEmitterNode(fileNamed: "ExplosionRed")!
-        explosion.position = ball.position
-        self.addChild(explosion)
-        //Blue
-        let explosion2 = SKEmitterNode(fileNamed: "ExplosionBlue")!
-        explosion2.position = ball.position
-        self.addChild(explosion2)
-        //Yellow
-        let explosion3 = SKEmitterNode(fileNamed: "ExplosionYellow")!
-        explosion3.position = ball.position
-        self.addChild(explosion3)
-        //Green
-        let explosion4 = SKEmitterNode(fileNamed: "ExplosionGreen")!
-        explosion4.position = ball.position
-        self.addChild(explosion4)
-        
-        ball.removeFromParent()
-        self.run(SKAction.wait(forDuration: 1)){
+        if score >= 10 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Main")
+            vc.view.frame = (self.view?.frame)!
+            vc.view.layoutIfNeeded()
+            UIView.transition(with: self.view!, duration: 0.3, options: .transitionFlipFromRight, animations:
+                {
+                    self.view?.window?.rootViewController = vc
+            }, completion: { completed in
+                })
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Switch")
+            vc.view.frame = (self.view?.frame)!
+            vc.view.layoutIfNeeded()
            
+            UIView.transition(with: self.view!, duration: 0.3, options: .transitionFlipFromRight, animations:
+                {
+                    self.view?.window?.rootViewController = vc
+            }, completion: { completed in
+            })
+            
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+            label.center = CGPoint(x: 160, y: 284)
+            label.textAlignment = .center
+            label.text = "Try Again!"
+            label.font = UIFont.preferredFont(forTextStyle: .headline)
+                vc.view.addSubview(label)
+            
         }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch:UITouch = (touches.first as UITouch?)!
-        let touchLocation = touch.location(in: self)
-        
-        if touchLocation.x < self.frame.size.width / 2 {
-            turnWheelLeft()
-        }else{
-            turnWheelRight()
-        }
-        if pauseButton.contains(touchLocation) {
-            self.isPaused = true
-            self.physicsWorld.speed = 0
-            self.speed = 0.0
-            addChild(playButton)
-            if playButton.contains(touchLocation){
-                self.scene?.view?.isPaused = false
-                self.physicsWorld.speed = -5
-                self.speed = -5.0
-                playButton.removeFromParent()
-            }
-        }
-    }
-    func pauseGame() {
-        self.isPaused = true
-        self.physicsWorld.speed = 0
-        self.speed = 0.0
-        self.scene?.view?.isPaused = true
+        turnWheelRight()
     }
 }
 
@@ -209,13 +179,11 @@ extension GameScene: SKPhysicsContactDelegate {
                     score += 1
                     updateScoreLabel()
                     let generator = UIImpactFeedbackGenerator(style: .light)
-                    //collision(ball: ball)
                     generator.impactOccurred()
                     ball.removeFromParent()
                     self.spawnBall()
                 } else {
                     gameOver()
-                    explosion(ball: ball)
                     let generator2 = UIImpactFeedbackGenerator(style: .heavy)
                     generator2.impactOccurred()
                 }
