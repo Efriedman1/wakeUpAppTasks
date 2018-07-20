@@ -162,7 +162,7 @@ class GameScene: SKScene {
             let puzzleGame = PuzzleGameViewController()
             puzzleGame.highScoreLabel.removeFromSuperview()
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: 60.0))
-            label.center = CGPoint(x: 187.5, y: 300)
+            label.center = CGPoint(x: puzzleGame.view.frame.midX, y: puzzleGame.view.frame.midY)
             label.textAlignment = .center
             label.text = "Try Again!"
             label.font = UIFont.preferredFont(forTextStyle: .headline).withSize(50.0)

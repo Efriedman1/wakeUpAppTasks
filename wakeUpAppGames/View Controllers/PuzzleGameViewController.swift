@@ -28,7 +28,7 @@ class PuzzleGameViewController: UIViewController {
         super.viewDidLoad()
         if recentScore >= 10 {
             startGame.layer.cornerRadius = 5
-            highScoreLabel.center = CGPoint(x: 187.5, y: 300)
+            highScoreLabel.center = CGPoint(x: view.frame.midX, y: view.frame.midY)
             highScoreLabel.textAlignment = .center
             highScoreLabel.text = "\(score)"
             highScoreLabel.font = UIFont.preferredFont(forTextStyle: .headline).withSize(50.0)
