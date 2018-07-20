@@ -78,29 +78,48 @@ class QuizGameViewController: UIViewController {
     
     @IBAction func bttn1(_ sender: UIButton) {
         if answerNumber == 0 {
-            self.performSegue(withIdentifier: "unwindToHome", sender: self)
-            bttn1.backgroundColor = UIColor.green
+            self.bttn1.backgroundColor = UIColor.green
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.performSegue(withIdentifier: "unwindToHome", sender: self)
+            }
         } else {
-            NSLog("Wrong")
             bttn1.backgroundColor = UIColor.red
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                NSLog("Wrong")
+                self.pickQuestion()
+                self.bttn1.backgroundColor = UIColor(red: 89/255, green: 89/255, blue: 89/255, alpha: 1)
+            }
         }
     }
     @IBAction func bttn2(_ sender: UIButton) {
         if answerNumber == 1 {
-            self.performSegue(withIdentifier: "unwindToHome", sender: self)
-            bttn2.backgroundColor = UIColor.green
+            self.bttn2.backgroundColor = UIColor.green
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                self.performSegue(withIdentifier: "unwindToHome", sender: self)
+            }
         } else {
-            NSLog("Wrong")
             bttn2.backgroundColor = UIColor.red
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                NSLog("Wrong")
+                self.pickQuestion()
+                self.bttn2.backgroundColor = UIColor(red: 89/255, green: 89/255, blue: 89/255, alpha: 1)
+            }
         }
     }
     @IBAction func bttn3(_ sender: UIButton) {
         if answerNumber == 2 {
-            self.performSegue(withIdentifier: "unwindToHome", sender: self)
-            bttn3.backgroundColor = UIColor.green
+            self.bttn3.backgroundColor = UIColor.green
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                self.performSegue(withIdentifier: "unwindToHome", sender: self)
+            }
         } else {
-           NSLog("Wrong")
             bttn3.backgroundColor = UIColor.red
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                NSLog("Wrong")
+                self.pickQuestion()
+                self.bttn3.backgroundColor = UIColor(red: 89/255, green: 89/255, blue: 89/255, alpha: 1)
+            }
+            
         }
     }
     //prepare function not working, nil value found when unwrapping optional

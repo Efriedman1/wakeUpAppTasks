@@ -236,7 +236,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-AV-iqo">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
-                                        <color key="backgroundColor" red="0.35049175129999999" green="0.35049175129999999" blue="0.35049175129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="BiT-H4-FaZ"/>
                                         </constraints>
